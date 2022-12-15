@@ -1,0 +1,138 @@
+<div
+  style="
+    text-align: center;
+    max-width: 480px;
+    margin: 0px auto;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.142857px;
+    font-family: 'Montserrat';
+  "
+>
+  <img src='https://panoton-dev.s3.amazonaws.com/email/logo.png' alt='logo' />
+  <div style='text-align: left'>
+    <p style='font-size: 16px'>Hello {{name}},</p>
+    <p>
+      Please check the below mentioned team details and verify
+      <b>{{invitedByName}}'s</b>
+      past experience:
+    </p>
+    <hr style='color: #6a6e87; opacity: 0.5; margin: 15px 0px' />
+    <table style='width: 100%'>
+      <tr>
+        <td style='vertical-align: top'>
+          <div style='border-radius: 15px;'>
+            <img
+              style='
+              border-radius: 15px;
+              padding: 1px;
+            '
+              width="75"
+              src={{companyLogo}}
+              alt='logo'
+            />
+          </div>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>Company Name:</td>
+              <td style='color: #646d71'>{{organizationName}}</td>
+            </tr>
+            <tr>
+              <td>Position:</td>
+              <td style='color: #646d71'>{{role}}</td>
+            </tr>
+            <tr>
+              <td>Active years:</td>
+              <td style='color: #646d71'>{{activeYears}}</td>
+            </tr>
+            <tr>
+              <td>Comments:</td>
+              <td style='color: #646d71'>{{comments}}</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <hr style='color: #6a6e87; opacity: 0.5; margin: 15px 0px' />
+
+    <p>
+      You can call {{invitedByPhoneNumber}} or email {{invitedByEmail}} to {{invitedByName}} for confirmation
+    </p>
+  </div>
+
+  <div
+    style='
+      background: url(https://panoton-dev.s3.amazonaws.com/email/button-bg.png);
+      background-blend-mode: lighten;
+      width: 100%;
+    '
+  >
+    <a href='{{verificationUrl}}'>
+      <button
+        style='
+        width: 100%;
+        border-radius: 8px;
+        padding: 12px 0px;
+        background-color: blue;
+        border-color: blue;
+        color: white;
+      '
+      >
+        Verify Now
+      </button>
+    </a>
+  </div>
+
+  <div style='text-align: center; padding:0px 15px;'>
+    {{!-- <p
+      style="
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        padding: 10px 0px;
+      "
+    >
+      Be part of
+      {{teamName}}<br />
+      <span style='text-decoration: underline'>By Registration</span>
+    </p> --}}
+
+    <hr style='color: #e0e1e4; opacity: 0.5' />
+    <p
+      style="
+        color: #c0c0c0;
+        padding: 8px 0px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+      "
+    >
+      DESIGNED & DEVELOPED BY Panoton
+    </p>
+    <hr style='color: #e0e1e4; opacity: 0.5' />
+  </div>
+
+  <div
+    style="
+      color: #3e3c3e;
+      text-align: center;
+      font-family: 'CircularXX TT';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 141.5%;
+      opacity: 0.8;
+    "
+  >
+    <p>
+      &#169; 2022 panoton, INC.<br />
+      3548 Ashwood Drive<br />
+      New York, NY 10007.
+    </p>
+    <p>Update Your Preferences or Unscubscribe from this list.</p>
+  </div>
+</div>
